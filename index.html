@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="status">Welcome, Guest</h1>
+  <button onclick="openLogin()">Login</button>
+  <script src="index.js"></script>
+    <header class="navbar">
+        <div class="logo">💙Fundhope</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Campaigns</a>
+            <a href="hiw.html">How It Works</a>
+        </nav>
+        <div class="auth">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <br><br>
+            <span class="badge">Trusted by 15,000+ supporters worldwide</span>
+            <h3>Fund What Matters,Change Lives Together</h3>
+            <p>Join thousands of people making a real difference.
+                Support causes you care about with complete transparency and security.
+            </p>
+            <div class="buttons">
+                <a href="browse.html" class="primary">Explore Campaigns</a>
+                <a href="signup.html" class="secondary">Start a Campaign</a>
+            </div>
+        </div>
+        <div class="hero-image">
+          <br>
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWxwaW5nJTIwaGFuZHN8ZW58MXx8fHwxNzY1Mjg1MzExfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Helping hands">
+            <br>
+            <div class="impact-card"><strong>Total Impact</strong><p>₹2.5M Raised</p></div>
+        </div>
+    </section>
+  
+<section class="stats-section">
+  <div class="stat-card">
+    <div class="icon">📈</div>
+    <h3>₹2.5Cr+</h3>
+    <p>Total Raised</p>
+  </div>
+
+  <div class="stat-card">
+    <div class="icon">❤️</div>
+    <h3>1,234</h3>
+    <p>Active Campaigns</p>
+  </div>
+
+  <div class="stat-card">
+    <div class="icon">👥</div>
+    <h3>15K+</h3>
+    <p>Happy Backers</p>
+  </div>
+
+  <div class="stat-card">
+    <div class="icon">🏅</div>
+    <h3>94%</h3>
+    <p>Success Rate</p>
+  </div>
+</section>
+
+<section class="category-section">
+  <h2>Browse by Category</h2>
+  <p>Find causes that resonate with you across various categories</p>
+
+  <div class="category-grid">
+    <div class="category-card edu">🎓 Education</div>
+    <div class="category-card med">🩺 Medical</div>
+    <div class="category-card dis">⚠ Disaster Relief</div>
+    <div class="category-card start">🚀 Startups</div>
+    <div class="category-card social">👨‍👩‍👧 Social Causes</div>
+  </div>
+</section>
+<section class="featured">
+  <div class="featured-header">
+    <div>
+      <h2>Featured Campaigns</h2>
+      <p>Urgent campaigns that need your support now</p>
+    </div>
+    <a href="browse.html" class="view-all">View All →</a>
+  </div>
+
+  <div class="campaign-list">
+    
+    <div class="campaign-card">
+      <div class="img-box">
+        <span class="tag education">Education</span>
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Education Campaign">
+      </div>
+      <h3>Education Fund for Rural Children</h3>
+      <p>Help provide quality education and learning materials to children.</p>
+
+      <div class="progress">
+        <div class="progress-bar" style="width: 70%;"></div>
+      </div>
+
+      <div class="card-footer">
+        <span>₹385,000 of ₹500,000</span>
+        <span>12 days left</span>
+      </div>
+    </div>
+
+    <div class="campaign-card">
+      <div class="img-box">
+        <span class="tag medical">Medical</span>
+        <span class="urgent">Urgent</span>
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Medical Campaign">
+      </div>
+      <h3>Life-Saving Surgery for Emma</h3>
+      <p>Emma needs urgent heart surgery. Your help can save her life.</p>
+
+      <div class="progress">
+        <div class="progress-bar" style="width: 83%;"></div>
+      </div>
+
+      <div class="card-footer">
+        <span>₹623,000 of ₹750,000</span>
+        <span>5 days left</span>
+      </div>
+    </div>
+    <div class="campaign-card">
+      <div class="img-box">
+        <span class="tag disaster">Disaster Relief</span>
+        <img src="https://images.unsplash.com/photo-1640296150617-1ede154483d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXNhc3RlciUyMHJlbGllZnxlbnwxfHx8fDE3NjUyODUzMTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Disaster Campaign">
+      </div>
+      <h3>Flood Relief for Coastal Communities</h3>
+      <p>Help families affected by floods with shelter and food.</p>
+
+      <div class="progress">
+        <div class="progress-bar" style="width: 78%;"></div>
+      </div>
+
+      <div class="card-footer">
+        <span>₹875,000 of ₹1,000,000</span>
+        <span>8 days left</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="why-fundhope">
+  <h2>Why Choose FundHope?</h2>
+  <p class="subtitle">
+    We prioritize trust, transparency, and security in every campaign
+  </p>
+
+  <div class="why-cards">
+
+    <div class="why-card">
+      <div class="icon icon-blue">🛡️</div>
+      <h3>Verified Campaigns</h3>
+      <p>
+        Every campaign is thoroughly reviewed and verified before going live
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="icon icon-green">📈</div>
+      <h3>Transparent Tracking</h3>
+      <p>
+        Track every donation and see exactly how funds are being used
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="icon icon-purple">❤️</div>
+      <h3>Community Driven</h3>
+      <p>
+        Join a community of 15,000+ supporters making real impact
+      </p>
+    </div>
+
+  </div>
+</section>
+<section class="security-section">
+  <div class="security-cards">
+
+    <div class="security-card">
+      <div class="sec-icon green">🔒</div>
+      <h3>256-bit SSL Encryption</h3>
+      <p>
+        Bank-level security protects all your transactions and personal information
+      </p>
+    </div>
+
+    <div class="security-card">
+      <div class="sec-icon orange">✅</div>
+      <h3>Money-Back Guarantee</h3>
+      <p>
+        100% refund if campaign organizer misuses funds or violates terms
+      </p>
+    </div>
+
+    <div class="security-card">
+      <div class="sec-icon blue">🏅</div>
+      <h3>ISO Certified Platform</h3>
+      <p>
+        Certified for data security and privacy compliance
+      </p>
+    </div>
+  </div>
+</section>
+<section class="stories-section">
+  <h2>Stories from Our Community</h2>
+  <p class="subtitle">Real people, real impact, real change</p>
+
+  <div class="stories-container">
+
+    <div class="story-card">
+      <div class="stars">★★★★★</div>
+      <p class="quote">
+        "FundHope helped me raise ₹5 lakhs for my daughter's surgery.
+        The platform is transparent and the support team was always there
+        for us. Forever grateful."
+      </p>
+      <div class="user">
+        <div class="avatar blue">RP</div>
+        <div>
+          <strong>Rajesh Patel</strong>
+          <span>Mumbai, Maharashtra</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="stars">★★★★★</div>
+      <p class="quote">
+        "Starting a campaign was so easy! The verification process gave
+        donors confidence. We funded our community school within 30 days."
+      </p>
+      <div class="user">
+        <div class="avatar purple">PS</div>
+        <div>
+          <strong>Priya Sharma</strong>
+          <span>Bangalore, Karnataka</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="stars">★★★★★</div>
+      <p class="quote">
+        "I've supported 20+ campaigns on FundHope. The transparency in
+        fund usage and regular updates make me trust this platform completely."
+      </p>
+      <div class="user">
+        <div class="avatar green">AK</div>
+        <div>
+          <strong>Amit Kumar</strong>
+          <span>Delhi NCR</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="trusted-section">
+  <h2>Recognized & Trusted</h2>
+  <p class="subtitle">Featured in leading publications and platforms</p>
+
+  <div class="media-logos">
+    <span>The Times of India</span>
+    <span>Hindustan Times</span>
+    <span>Economic Times</span>
+    <span>YourStory</span>
+  </div>
+</section>
+
+<section class="impact-section">
+  <h2>Making Real Impact Since 2020</h2>
+  <p class="subtitle">
+    Join India's most trusted crowdfunding platform
+  </p>
+
+  <div class="impact-stats">
+    <div class="stat">
+      <h3>₹25+ Crores</h3>
+      <p>Total Funds Raised</p>
+    </div>
+
+    <div class="stat">
+      <h3>10,000+</h3>
+      <p>Successful Campaigns</p>
+    </div>
+
+    <div class="stat">
+      <h3>50,000+</h3>
+      <p>Lives Impacted</p>
+    </div>
+
+    <div class="stat">
+      <h3>100+</h3>
+      <p>Cities Across India</p>
+    </div>
+  </div>
+</section>
+<!-- CTA Section -->
+<section class="cta-section">
+  <h2>Start a Campaign or Browse Campaigns</h2>
+  <div class="cta-buttons">
+    <a href="signup.html" class="btn light-btn">Start a Campaign</a>
+    <a href="browse.html" class="btn outline-btn">Browse Campaigns</a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>FundHope</h3>
+      <p>Empowering communities to make a difference, one campaign at a time.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#">Education</a>
+      <a href="#">Medical</a>
+      <a href="#">Disaster Relief</a>
+      <a href="#">Startups</a>
+      <a href="#">Social Causes</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">How It Works</a>
+      <a href="#">Success Stories</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Safety & Trust</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 FundHope. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
