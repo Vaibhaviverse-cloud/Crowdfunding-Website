@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Browse Campaigns | FundHope</title>
+  <link rel="stylesheet" href="browse.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">💙 FundHope</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="browse.html">Browse Campaigns</a>
+    <a href="hiw.html">How It Works</a>
+  </nav>
+  <div class="auth">
+    <a href="login.html">Login</a>
+    <a href="signup.html"><button>Sign Up</button></a>
+  </div>
+</header>
+
+<section class="page-title">
+  <h1>Browse Campaigns</h1>
+  <p>Discover and support campaigns that matter to you</p>
+</section>
+
+<section class="filters">
+  <input type="text" placeholder="Search campaigns..." />
+  <div class="categories">
+    <button class="active" data-category="all">All</button>
+    <button data-category="education">Education</button>
+    <button data-category="medical">Medical</button>
+    <button data-category="disaster">Disaster Relief</button>
+    <button data-category="startup">Startups</button>
+    <button data-category="social">Social Causes</button>
+  </div>
+</section>
+
+<!-- CAMPAIGNS -->
+<section class="campaigns" id="campaigns">
+
+  <!-- CARD -->
+  <div class="card" data-category="disaster">
+    <span class="tag">Disaster Relief</span>
+    <img src="https://images.unsplash.com/photo-1640296150617-1ede154483d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXNhc3RlciUyMHJlbGllZnxlbnwxfHx8fDE3NjUyODUzMTB8MA&ixlib=rb-4.1.0&q=80&w=1080">
+    <h3>Flood Relief for Coastal Communities</h3>
+    <p>Help displaced families with food, shelter and clean water.</p>
+
+    <div class="money">
+      <span>₹8,75,000</span>
+      <span>of ₹10,00,000</span>
+    </div>
+    <div class="progress"><div style="width:87%"></div></div>
+
+    <div class="meta">
+      <span>👥 1,243 backers</span>
+      <span>⏱ 8 days left</span>
+    </div>
+    <div class="by">by Relief Foundation</div>
+  </div>
+
+  <div class="card" data-category="medical">
+    <span class="tag">Medical</span>
+    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" />
+    <h3>Cancer Treatment Fund for James</h3>
+    <p>Support James through his cancer treatment and recovery.</p>
+
+    <div class="money">
+      <span>₹7,89,000</span>
+      <span>of ₹12,00,000</span>
+    </div>
+    <div class="progress"><div style="width:65%"></div></div>
+
+    <div class="meta">
+      <span>👥 934 backers</span>
+      <span>⏱ 25 days left</span>
+    </div>
+    <div class="by">by Lisa Thompson</div>
+  </div>
+
+  <div class="card urgent" data-category="medical">
+    <span class="tag urgent-tag">Urgent</span>
+    <img src="https://images.unsplash.com/photo-1512069511692-b82d787265cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwaGVhbHRoY2FyZXxlbnwxfHx8fDE3NjUyMjgxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080" />
+    <h3>Life-Saving Surgery for Emma</h3>
+    <p>Urgent heart surgery for a 7-year-old child.</p>
+
+    <div class="money">
+      <span>₹6,23,000</span>
+      <span>of ₹7,50,000</span>
+    </div>
+    <div class="progress"><div style="width:83%"></div></div>
+
+    <div class="meta">
+      <span>👥 892 backers</span>
+      <span class="red">⏱ 5 days left</span>
+    </div>
+    <div class="by">by Michael Chen</div>
+  </div>
+
+  <div class="card" data-category="education">
+    <span class="tag">Education</span>
+    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" />
+    <h3>Education Fund for Rural Children</h3>
+    <p>Help children access quality education and learning tools.</p>
+
+    <div class="money">
+      <span>₹3,85,000</span>
+      <span>of ₹5,00,000</span>
+    </div>
+    <div class="progress"><div style="width:77%"></div></div>
+
+    <div class="meta">
+      <span>👥 487 backers</span>
+      <span>⏱ 12 days left</span>
+    </div>
+    <div class="by">by Sarah Johnson</div>
+  </div>
+  <div class="card" data-category="startup">
+    <span class="tag">StartUp</span>
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" />
+    <h3>StartUp for Rural Employment</h3>
+    <p>Creating sustainable rural jobs that boost local economies and reduce migration.</p>
+
+    <div class="money">
+      <span>₹3,75,000</span>
+      <span>of ₹5,60,000</span>
+    </div>
+    <div class="progress"><div style="width:66%"></div></div>
+
+    <div class="meta">
+      <span>👥 484 backers</span>
+      <span>⏱ 10 days left</span>
+    </div>
+    <div class="by">by Jhon Doe</div>
+  </div>
+   <div class="card" data-category="social">
+    <span class="tag">Social Causes</span>
+    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"/>
+    <h3>Support Women Empowerment</h3>
+    <p>Creating dignified rural jobs that empower women, strengthen families, and uplift entire communities.</p>
+
+    <div class="money">
+      <span>₹3,95,000</span>
+      <span>of ₹6,00,000</span>
+    </div>
+    <div class="progress"><div style="width:65%"></div></div>
+
+    <div class="meta">
+      <span>👥 449 backers</span>
+      <span>⏱ 15 days left</span>
+    </div>
+    <div class="by">by James Willy</div>
+  </div>
+
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>FundHope</h3>
+      <p>Empowering communities to make a difference, one campaign at a time.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <a href="#">Education</a>
+      <a href="#">Medical</a>
+      <a href="#">Disaster Relief</a>
+      <a href="#">Startups</a>
+      <a href="#">Social Causes</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About Us</a>
+      <a href="#">How It Works</a>
+      <a href="#">Success Stories</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Safety & Trust</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 FundHope. All rights reserved.
+  </div>
+</footer>
+
+<script src="b.js"></script>
+</body>
+</html>
