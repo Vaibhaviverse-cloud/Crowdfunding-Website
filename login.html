@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crowdfunding Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="overlay" id="overlay">
+    <div class="login-card">
+        <span class="close-btn" onclick="goHome()">&times;</span>
+
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Login to continue supporting amazing causes</p>
+
+        <div class="info-box">
+            <strong>Secure & Transparent</strong>
+            <p>Your data is encrypted and your donations are tracked</p>
+        </div>
+
+        <form id="loginForm" onsubmit="login();return false;">
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="••••••••" required>
+
+            <a href="#" class="forgot">Forgot password?</a>
+
+            <button type="submit" onclick="login()">Login</button>
+            <p id="error" style="color: red;"></p>
+        </form>
+
+        <p class="signup-text">
+            Do not have an account?
+            <a href="signup.html">Sign Up</a>
+        </p>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
