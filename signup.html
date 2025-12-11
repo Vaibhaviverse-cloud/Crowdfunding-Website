@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="sup.css">
+</head>
+<body>
+
+  <div class="signup-box">
+  <span class="close" onclick="goHome()">&times;</span>
+    <h2>Create Account</h2>
+    <p class="subtitle">Join our community of changemakers</p>
+    <div class="info-box">
+      <strong>🔒 Secure & Transparent</strong>
+      <p>Your data is encrypted and your donations are tracked</p>
+    </div>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="abc xyz" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="your@email.com" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="********" required>
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <p class="login-link">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </div>
+</div>
+
+</body>
+<script>
+  function goHome(){
+    window.location.href="index.html";
+  }
+</script>
+</html>
